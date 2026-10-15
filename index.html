@@ -222,6 +222,7 @@ figcaption .d{display:none}
   figcaption .d{display:inline}
   .hero .in{padding:0 64px 96px}
   .movie .cap{padding:160px 64px 60px}
+  .walk::before{content:"";position:absolute;inset:-40px;background:url(img/poster_walk.jpg) center/cover;filter:blur(48px) brightness(.32);z-index:0}
   .walk .walk-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;align-items:center;gap:72px;max-width:1180px;margin:0 auto;padding:110px 64px}
   .walk .cap{position:static;padding:0;background:none;pointer-events:auto}
   .walk .cap h2{font-size:clamp(28px,3.2vw,40px)}
@@ -380,11 +381,25 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 06 COMMON SPACE -->
+<!-- 06 WALKTHROUGH -->
+<section class="movie walk">
+  <div class="walk-in">
+    <div class="cap rv">
+      <p class="no">06 — Walkthrough</p>
+      <h2>夕景の最上階を、<br>歩いて見る3415</h2>
+      <p>玄関からLDの角窓、レインボーブリッジ、<br>キッチン、洋室、浴室、<br>そしてバルコニーの夕景まで4倍速で一巡します。</p>
+    </div>
+    <div class="walk-v rv">
+      <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_walk.jpg" data-webm="video/walkthrough.webm" data-mp4="video/walkthrough.mp4"></video>
+    </div>
+  </div>
+</section>
+
+<!-- 07 COMMON SPACE -->
 <section class="movie short">
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_sky.jpg" data-webm="video/loop_sky.webm" data-mp4="video/loop_sky.mp4"></video>
   <div class="cap">
-    <p class="no">06 — Common Space</p>
+    <p class="no">07 — Common Space</p>
     <h2>住まいの中の<br>サード・プレイス</h2>
     <p>1階・2階・29階に配した8つの共用施設。</p>
   </div>
@@ -415,11 +430,11 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 07 ENTRANCE / RESIDENCE -->
+<!-- 08 ENTRANCE / RESIDENCE -->
 <section class="movie short">
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_sunset.jpg" data-webm="video/loop_sunset.webm" data-mp4="video/loop_sunset.mp4"></video>
   <div class="cap">
-    <p class="no">07 — Entrance &amp; Residence</p>
+    <p class="no">08 — Entrance &amp; Residence</p>
     <h2>帆船を思わせるフォルム、<br>奥行き約50mの迎賓空間</h2>
     <p>約12mのアプローチと高さ約8mの車寄せ。石張りの壁面に波の紋様、天井には竜骨状のオブジェ。</p>
   </div>
@@ -443,11 +458,11 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 08 LOCATION -->
+<!-- 09 LOCATION -->
 <section class="light">
   <div class="wrap">
     <div class="head rv">
-      <p class="no">08 — Location</p>
+      <p class="no">09 — Location</p>
       <h2>品川駅徒歩13分、<br>水辺と緑に囲まれた港南</h2>
       <p class="lead">運河沿いの遊歩道や公園が身近で、スーパー「マルエツプチ港南シティタワー店」は徒歩3分。品川駅港南口へはマンション専用シャトルバスが運行します。</p>
     </div>
@@ -465,11 +480,11 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 09 FUTURE -->
+<!-- 10 FUTURE -->
 <section class="movie short">
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_night.jpg" data-webm="video/loop_night.webm" data-mp4="video/loop_night.mp4"></video>
   <div class="cap">
-    <p class="no">09 — Future of Shinagawa</p>
+    <p class="no">10 — Future of Shinagawa</p>
     <h2>日本の玄関口が、<br>動き始める</h2>
     <p>高輪ゲートウェイシティ、品川駅周辺の再開発、リニア中央新幹線。街の価値がこれから育っていくエリアです。</p>
   </div>
@@ -493,11 +508,11 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 10 ACCESS -->
+<!-- 11 ACCESS -->
 <section style="padding-top:0">
   <div class="wrap">
     <div class="head rv">
-      <p class="no">10 — Access</p>
+      <p class="no">11 — Access</p>
       <h2>「品川」駅から</h2>
       <p class="lead">東海道新幹線、山手線、京急線が集まる品川駅。都心主要駅と羽田空港へダイレクトに。</p>
     </div>
@@ -519,11 +534,11 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 11 EQUIPMENT -->
+<!-- 12 EQUIPMENT -->
 <section class="light">
   <div class="wrap">
     <div class="head rv">
-      <p class="no">11 — Equipment</p>
+      <p class="no">12 — Equipment</p>
       <h2>設備・仕様</h2>
     </div>
     <ul class="eq rv">
@@ -540,11 +555,11 @@ figcaption .d{display:none}
   </div>
 </section>
 
-<!-- 12 OUTLINE -->
+<!-- 13 OUTLINE -->
 <section class="light paper2" style="padding-top:0">
   <div class="wrap" style="padding-top:80px">
     <div class="head rv">
-      <p class="no">12 — Outline</p>
+      <p class="no">13 — Outline</p>
       <h2>物件概要</h2>
     </div>
     <div class="grid grid-d2 rv" style="align-items:start">
@@ -594,7 +609,7 @@ figcaption .d{display:none}
 </section>
 
 <footer>
-  <p>※専有部の写真は2026年6月・10月撮影（一部は空の色を画像処理で調整）。共用部・外観・周辺の写真および動画は竣工後に撮影されたもので、一部CG・完成予想図を含みます。</p>
+  <p>※専有部の写真は2026年6月・10月撮影（一部は空の色を画像処理で調整）、室内動画は2026年10月撮影（4倍速）。共用部・外観・周辺の写真および動画は竣工後に撮影されたもので、一部CG・完成予想図を含みます。</p>
   <p>※掲載内容は2026年10月現在のものです。共用施設・サービスの内容は管理規約に従い、変更となる場合があります。</p>
   <p>※家具・調度品は販売価格に含まれません。</p>
   </footer>
