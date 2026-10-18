@@ -242,13 +242,24 @@ figcaption .d{display:none}
   .tl li{padding:0 12px 0 0}
   .tl li::before{left:0;top:-30px}
 }
+.bar .lang{display:flex;gap:9px;margin-left:auto;margin-right:12px;font-size:10px;letter-spacing:.12em;color:#cfc9bd;flex:0 0 auto;pointer-events:auto}
+.bar .lang a{cursor:pointer;opacity:.55;padding:6px 2px;border-bottom:1px solid transparent;-webkit-tap-highlight-color:transparent}
+.bar .lang a.on{opacity:1;color:var(--gold2);border-bottom-color:var(--gold2)}
+.bar .brand{min-width:0}.bar .brand small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html[lang="zh"] body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans JP",sans-serif}
+html[lang="en"] .movie .cap p,html[lang="zh"] .movie .cap p{max-width:720px}
+html[lang="en"] .hero h1{letter-spacing:.06em;font-size:clamp(18px,5vw,30px)}
+html[lang="zh"] .keys .v,html[lang="en"] .keys .v{white-space:nowrap;letter-spacing:-.02em}
+html[lang="zh"] .keys .v{font-size:clamp(24px,7vw,40px)}
+.pdfs{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}.pdfs .pdfs-t{width:100%;font-size:11px;letter-spacing:.24em;color:var(--gold2,#d9bf7a);margin-bottom:4px}.pdfs a{display:inline-flex;align-items:center;padding:10px 16px;border:1px solid rgba(255,255,255,.45);border-radius:999px;color:#fff;font-size:12px;letter-spacing:.12em;text-decoration:none;background:rgba(0,0,0,.25)}.pdfs a.on{border-color:var(--gold2,#d9bf7a);color:var(--gold2,#d9bf7a)}
 </style>
 </head>
 <body>
 
 <div class="bar" id="bar">
-  <div class="brand"><span class="pc">LIVIO TOWER SHINAGAWA</span><small>リビオタワー品川　3415</small></div>
-  <div class="price"><b>6億円</b></div>
+  <div class="brand"><span class="pc">LIVIO TOWER SHINAGAWA</span><small data-i18n="L403">リビオタワー品川　3415</small></div>
+  <div class="lang" id="lang"><a data-lang="ja">JA</a><a data-lang="en">EN</a><a data-lang="zh">中文</a></div>
+  <div class="price"><b data-i18n="L404">6億円</b></div>
 </div>
 
 <!-- HERO -->
@@ -258,11 +269,11 @@ figcaption .d{display:none}
   <div class="in">
     <p class="en">Livio Tower Shinagawa</p>
     <p class="no">3415<small>34F</small></p>
-    <h1>リビオタワー品川</h1>
+    <h1 data-i18n="L002">リビオタワー品川</h1>
     <ul class="spec">
-      <li>最上階ペントハウス</li><li>北東角・2面バルコニー</li><li>3LDK＋3WIC</li><li>専有 130.24㎡</li><li>天井高 約2.9m</li><li>2026年10月新築</li>
+      <li data-i18n="L405">最上階ペントハウス</li><li data-i18n="L406">北東角・2面バルコニー</li><li>3LDK＋3WIC</li><li data-i18n="L407">専有 130.24㎡</li><li data-i18n="L408">天井高 約2.9m</li><li data-i18n="L006">2026年10月新築</li>
     </ul>
-    <p class="p"><span>販売価格</span><b>6億円</b><small>（税込）</small></p>
+    <p class="p" data-i18n="L409"><span data-i18n="L147">販売価格</span><b data-i18n="L404">6億円</b><small data-i18n="L008">（税込）</small></p>
   </div>
   <div class="scroll">SCROLL</div>
 </header>
@@ -273,9 +284,9 @@ figcaption .d{display:none}
     <li><div class="v">34<small>F</small></div><div class="k">Top Floor</div></li>
     <li><div class="v">130.24<small>㎡</small></div><div class="k">Area</div></li>
     <li><div class="v">3<small>LDK</small></div><div class="k">Plan</div></li>
-    <li><div class="v">北東<small>角</small></div><div class="k">Corner</div></li>
-    <li><div class="v">815<small>戸</small></div><div class="k">Residences</div></li>
-    <li><div class="v">13<small>分</small></div><div class="k">品川駅 徒歩</div></li>
+    <li><div class="v" data-i18n="L198">北東<small data-i18n="L199">角</small></div><div class="k">Corner</div></li>
+    <li><div class="v" data-i18n="L010">815<small data-i18n="L011">戸</small></div><div class="k">Residences</div></li>
+    <li><div class="v" data-i18n="L012">13<small data-i18n="L013">分</small></div><div class="k" data-i18n="L014">品川駅 徒歩</div></li>
   </ul>
 </div>
 
@@ -283,16 +294,16 @@ figcaption .d{display:none}
 <section class="light plan-top">
   <div class="wrap">
     <div class="plan-grid">
-      <figure class="box rv zoom"><img src="img/u00_plan3d.jpg" width="1800" height="1800" loading="lazy" alt="3D間取図 P-130Ane"><figcaption><span class="t">3D間取図</span><span class="d">　家具はイメージです</span></figcaption></figure>
+      <figure class="box rv zoom"><img src="img/u00_plan3d.jpg" width="1800" height="1800" loading="lazy" alt="3D間取図 P-130Ane"><figcaption><span class="t" data-i18n="L015">3D間取図</span><span class="d" data-i18n="L016">　家具はイメージです</span></figcaption></figure>
       <div class="meta rv">
         <div class="head" style="margin:0">
           <p class="no">01 — Floor Plan</p>
-          <h2>最上階、15邸だけの<br>プレミアムフロア</h2>
+          <h2 data-i18n="L410">最上階、15邸だけの<br>プレミアムフロア</h2>
         </div>
-        <div class="big">130.24<small>㎡（壁芯）</small></div>
-        <p>約25.5帖のリビングダイニングに<br class="sp">2面の角窓を回した、<br class="sp">34階最上階のペントハウス。<br>LDと洋室2室は天井高約2.9m。<br>3つの洋室それぞれに<br class="sp">ウォークインクローゼット、<br class="sp">1822サイズの浴室、<br class="sp">ウッドデッキの2面バルコニー。</p>
+        <div class="big" data-i18n="L411">130.24<small data-i18n="L019">㎡（壁芯）</small></div>
+        <p data-i18n="L412">約25.5帖のリビングダイニングに<br class="sp">2面の角窓を回した、<br class="sp">34階最上階のペントハウス。<br>LDと洋室2室は天井高約2.9m。<br>3つの洋室それぞれに<br class="sp">ウォークインクローゼット、<br class="sp">1822サイズの浴室、<br class="sp">ウッドデッキの2面バルコニー。</p>
         <ul class="chips">
-          <li>LD 25.5帖</li><li>キッチン 4.7帖</li><li>洋室(1) 10.0帖</li><li>洋室(2) 6.0帖</li><li>洋室(3) 6.0帖</li><li>WIC 2.3・0.8・1.2帖</li><li>SIC 2.0帖</li><li>浴室 1822</li><li>天井高 約2.9m</li><li>2面バルコニー（ウッドデッキ）</li><li>トランクルーム 1.46㎡</li>
+          <li data-i18n="L413">LD 25.5帖</li><li data-i18n="L414">キッチン 4.7帖</li><li data-i18n="L415">洋室(1) 10.0帖</li><li data-i18n="L206">洋室(2) 6.0帖</li><li data-i18n="L416">洋室(3) 6.0帖</li><li data-i18n="L417">WIC 2.3・0.8・1.2帖</li><li data-i18n="L418">SIC 2.0帖</li><li data-i18n="L419">浴室 1822</li><li data-i18n="L408">天井高 約2.9m</li><li data-i18n="L420">2面バルコニー（ウッドデッキ）</li><li data-i18n="L421">トランクルーム 1.46㎡</li>
         </ul>
       </div>
     </div>
@@ -304,8 +315,8 @@ figcaption .d{display:none}
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/c15_hall_art.jpg" data-webm="video/common_space.webm" data-mp4="video/common_space.mp4"></video>
   <div class="cap">
     <p class="no">02 — Movie</p>
-    <h2>品川の新しいランドマーク、<br>その共用空間へ</h2>
-    <p>エントランスホールから29階スカイラウンジまで。地上34階建・総戸数815戸の免震タワーレジデンス。</p>
+    <h2 data-i18n="L031">品川の新しいランドマーク、<br>その共用空間へ</h2>
+    <p data-i18n="L032">エントランスホールから29階スカイラウンジまで。地上34階建・総戸数815戸の免震タワーレジデンス。</p>
   </div>
 </section>
 
@@ -315,20 +326,20 @@ figcaption .d{display:none}
   <div class="wrap">
     <div class="head rv">
       <p class="no">03 — View</p>
-      <h2>34階、最上階の眺望</h2>
-      <p class="lead">レインボーブリッジとお台場、<br class="sp">東京湾のパノラマ。<br>運河の先には都心のスカイライン。<br>視界を遮るもののない<br class="sp">最上階の眺めが広がります。</p>
+      <h2 data-i18n="L422">34階、最上階の眺望</h2>
+      <p class="lead" data-i18n="L423">レインボーブリッジとお台場、<br class="sp">東京湾のパノラマ。<br>運河の先には都心のスカイライン。<br>視界を遮るもののない<br class="sp">最上階の眺めが広がります。</p>
     </div>
     <div class="stack">
-      <figure class="full rv zoom"><img src="img/u20_view_rainbow.jpg" width="1800" height="1344" loading="lazy" alt="レインボーブリッジとお台場"><figcaption><span class="t">レインボーブリッジとお台場</span><span class="d">　34階からの眺望（2026年6月撮影）</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/u20_view_rainbow.jpg" width="1800" height="1344" loading="lazy" alt="レインボーブリッジとお台場"><figcaption><span class="t" data-i18n="L424">レインボーブリッジとお台場</span><span class="d" data-i18n="L425">　34階からの眺望（2026年6月撮影）</span></figcaption></figure>
       <div class="grid grid-d2 offset rv">
-        <figure class="zoom"><img src="img/u21_view_bay.jpg" width="1800" height="1344" loading="lazy" alt="東京湾方向"><figcaption><span class="t">東京湾方向</span><span class="d">　レインボーブリッジと湾岸のタワー群</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u22_view_canal.jpg" width="1800" height="1344" loading="lazy" alt="運河と都心方向"><figcaption><span class="t">運河と都心方向</span><span class="d">　品川ふ頭と高浜運河</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u21_view_bay.jpg" width="1800" height="1344" loading="lazy" alt="東京湾方向"><figcaption><span class="t" data-i18n="L426">東京湾方向</span><span class="d" data-i18n="L427">　レインボーブリッジと湾岸のタワー群</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u22_view_canal.jpg" width="1800" height="1344" loading="lazy" alt="運河と都心方向"><figcaption><span class="t" data-i18n="L428">運河と都心方向</span><span class="d" data-i18n="L429">　品川ふ頭と高浜運河</span></figcaption></figure>
       </div>
       <div class="grid grid-2 grid-d2 rv">
-        <figure class="zoom"><img class="ar-3-4" src="img/u24_view_city.jpg" width="1344" height="1800" loading="lazy" alt="都心・東京タワー方向"><figcaption><span class="t">都心・東京タワー方向</span><span class="d">　港南から芝浦のスカイライン</span></figcaption></figure>
-        <figure class="zoom"><img class="ar-3-4" src="img/u25_balcony_view.jpg" width="1800" height="1344" loading="lazy" alt="バルコニーから"><figcaption><span class="t">バルコニーから</span><span class="d">　ウッドデッキ越しの東京湾</span></figcaption></figure>
+        <figure class="zoom"><img class="ar-3-4" src="img/u24_view_city.jpg" width="1344" height="1800" loading="lazy" alt="都心・東京タワー方向"><figcaption><span class="t" data-i18n="L430">都心・東京タワー方向</span><span class="d" data-i18n="L431">　港南から芝浦のスカイライン</span></figcaption></figure>
+        <figure class="zoom"><img class="ar-3-4" src="img/u25_balcony_view.jpg" width="1800" height="1344" loading="lazy" alt="バルコニーから"><figcaption><span class="t" data-i18n="L432">バルコニーから</span><span class="d" data-i18n="L433">　ウッドデッキ越しの東京湾</span></figcaption></figure>
       </div>
-      <figure class="full rv zoom"><img src="img/u23_balcony.jpg" width="1800" height="1344" loading="lazy" alt="バルコニー1"><figcaption><span class="t">バルコニー1</span><span class="d">　ウッドデッキ仕上げ、約18.82㎡</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/u23_balcony.jpg" width="1800" height="1344" loading="lazy" alt="バルコニー1"><figcaption><span class="t" data-i18n="L434">バルコニー1</span><span class="d" data-i18n="L435">　ウッドデッキ仕上げ、約18.82㎡</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -338,24 +349,24 @@ figcaption .d{display:none}
   <div class="wrap">
     <div class="head rv">
       <p class="no">04 — Living Dining</p>
-      <h2>約25.5帖のLDに、<br>2面の角窓</h2>
-      <p class="lead">天井高約2.9mのリビング<br class="sp">ダイニングは、コーナーで出会う<br class="sp">2面のフィックス窓が主役。<br>大判の石目調タイルと<br class="sp">折り上げ天井の間接照明が、<br class="sp">眺望を静かに引き立てます。</p>
+      <h2 data-i18n="L436">約25.5帖のLDに、<br>2面の角窓</h2>
+      <p class="lead" data-i18n="L437">天井高約2.9mのリビング<br class="sp">ダイニングは、コーナーで出会う<br class="sp">2面のフィックス窓が主役。<br>大判の石目調タイルと<br class="sp">折り上げ天井の間接照明が、<br class="sp">眺望を静かに引き立てます。</p>
     </div>
     <div class="stack">
-      <figure class="full rv zoom"><img src="img/u01_ldk_corner.jpg" width="1800" height="1005" loading="lazy" alt="リビングダイニング"><figcaption><span class="t">リビングダイニング</span><span class="d">　コーナーウィンドウ越しにレインボーブリッジ</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/u01_ldk_corner.jpg" width="1800" height="1005" loading="lazy" alt="リビングダイニング"><figcaption><span class="t" data-i18n="L223">リビングダイニング</span><span class="d" data-i18n="L438">　コーナーウィンドウ越しにレインボーブリッジ</span></figcaption></figure>
       <div class="grid grid-d2 rv">
-        <figure class="zoom"><img src="img/u02_ldk_kitchen_side.jpg" width="1800" height="1005" loading="lazy" alt="キッチン側から"><figcaption><span class="t">キッチン側から</span><span class="d">　約25.5帖の広がり</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u03_ldk_window_kitchen.jpg" width="1800" height="1005" loading="lazy" alt="窓側から"><figcaption><span class="t">窓側から</span><span class="d">　対面キッチンと都心方向の眺め</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u02_ldk_kitchen_side.jpg" width="1800" height="1005" loading="lazy" alt="キッチン側から"><figcaption><span class="t" data-i18n="L439">キッチン側から</span><span class="d" data-i18n="L440">　約25.5帖の広がり</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u03_ldk_window_kitchen.jpg" width="1800" height="1005" loading="lazy" alt="窓側から"><figcaption><span class="t" data-i18n="L441">窓側から</span><span class="d" data-i18n="L442">　対面キッチンと都心方向の眺め</span></figcaption></figure>
       </div>
       <div class="grid grid-d2 rv">
-        <figure class="zoom"><img src="img/u04_kitchen_island.jpg" width="1800" height="1005" loading="lazy" alt="アイランドキッチン"><figcaption><span class="t">アイランドキッチン</span><span class="d">　白い天板の向こうに東京湾</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u05_ldk_corner_bay.jpg" width="1800" height="1344" loading="lazy" alt="コーナーウィンドウとバルコニー"><figcaption><span class="t">コーナーウィンドウ</span><span class="d">　レインボーブリッジと、バルコニーへの出入口</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u04_kitchen_island.jpg" width="1800" height="1005" loading="lazy" alt="アイランドキッチン"><figcaption><span class="t" data-i18n="L029">アイランドキッチン</span><span class="d" data-i18n="L443">　白い天板の向こうに東京湾</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u05_ldk_corner_bay.jpg" width="1800" height="1344" loading="lazy" alt="コーナーウィンドウとバルコニー"><figcaption><span class="t" data-i18n="L005">コーナーウィンドウ</span><span class="d" data-i18n="L444">　レインボーブリッジと、バルコニーへの出入口</span></figcaption></figure>
       </div>
       <div class="grid grid-2 grid-d2 rv">
-        <figure class="zoom"><img src="img/u06_kitchen_stove.jpg" width="1800" height="1350" loading="lazy" alt="ガラストップコンロ"><figcaption><span class="t">ガラストップコンロ</span><span class="d">　石目調カウンター</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u07_kitchen_miele.jpg" width="1800" height="1350" loading="lazy" alt="Miele 食器洗浄機"><figcaption><span class="t">Miele 食器洗浄機</span><span class="d">　ビルトイン</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u08_kitchen_counter.jpg" width="1800" height="1350" loading="lazy" alt="キッチンカウンター"><figcaption><span class="t">キッチンカウンター</span><span class="d">　ダークブラウンの鏡面扉</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u09_kitchen_hood.jpg" width="1800" height="1350" loading="lazy" alt="レンジフード"><figcaption><span class="t">レンジフード</span><span class="d">　ステンレスのフード</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u06_kitchen_stove.jpg" width="1800" height="1350" loading="lazy" alt="ガラストップコンロ"><figcaption><span class="t" data-i18n="x019">ガラストップコンロ</span><span class="d" data-i18n="L446">　石目調カウンター</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u07_kitchen_miele.jpg" width="1800" height="1350" loading="lazy" alt="Miele 食器洗浄機"><figcaption><span class="t" data-i18n="L447">Miele 食器洗浄機</span><span class="d" data-i18n="L448">　ビルトイン</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u08_kitchen_counter.jpg" width="1800" height="1350" loading="lazy" alt="キッチンカウンター"><figcaption><span class="t" data-i18n="L449">キッチンカウンター</span><span class="d" data-i18n="L450">　ダークブラウンの鏡面扉</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u09_kitchen_hood.jpg" width="1800" height="1350" loading="lazy" alt="レンジフード"><figcaption><span class="t" data-i18n="L451">レンジフード</span><span class="d" data-i18n="L452">　ステンレスのフード</span></figcaption></figure>
       </div>
     </div>
   </div>
@@ -366,16 +377,16 @@ figcaption .d{display:none}
   <div class="wrap">
     <div class="head rv">
       <p class="no">05 — Bedrooms</p>
-      <h2>3つの洋室と、<br>3つのウォークインクローゼット</h2>
-      <p class="lead">洋室(1)は約10.0帖、<br class="sp">天井高約2.9mの主寝室。<br>3室すべてがウッドデッキの<br class="sp">バルコニーに面し、<br class="sp">ウォールナットの床が続きます。<br>浴室は1822サイズ。</p>
+      <h2 data-i18n="L453">3つの洋室と、<br>3つのウォークインクローゼット</h2>
+      <p class="lead" data-i18n="L454">洋室(1)は約10.0帖、<br class="sp">天井高約2.9mの主寝室。<br>3室すべてがウッドデッキの<br class="sp">バルコニーに面し、<br class="sp">ウォールナットの床が続きます。<br>浴室は1822サイズ。</p>
     </div>
     <div class="stack">
-      <figure class="full rv zoom"><img src="img/u10_bed1_window.jpg" width="1800" height="1005" loading="lazy" alt="洋室(1) 約10.0帖"><figcaption><span class="t">洋室(1) 約10.0帖</span><span class="d">　バルコニー側</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/u10_bed1_window.jpg" width="1800" height="1005" loading="lazy" alt="洋室(1) 約10.0帖"><figcaption><span class="t" data-i18n="L455">洋室(1) 約10.0帖</span><span class="d" data-i18n="L456">　バルコニー側</span></figcaption></figure>
       <div class="grid grid-2 grid-d2 rv">
-        <figure class="zoom"><img src="img/u11_bed1_entry.jpg" width="1600" height="900" loading="lazy" alt="洋室(1)"><figcaption><span class="t">洋室(1)</span><span class="d">　入口側より</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u12_bed2.jpg" width="1800" height="1005" loading="lazy" alt="洋室(2) 約6.0帖"><figcaption><span class="t">洋室(2) 約6.0帖</span><span class="d">　WIC 1.2帖付き</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u13_bed3.jpg" width="1800" height="1005" loading="lazy" alt="洋室(3) 約6.0帖"><figcaption><span class="t">洋室(3) 約6.0帖</span><span class="d">　WIC 0.8帖付き</span></figcaption></figure>
-        <figure class="zoom"><img src="img/u14_bed_balcony.jpg" width="1800" height="1344" loading="lazy" alt="洋室からバルコニーへ"><figcaption><span class="t">洋室からバルコニーへ</span><span class="d">　ウッドデッキ</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u11_bed1_entry.jpg" width="1600" height="900" loading="lazy" alt="洋室(1)"><figcaption><span class="t" data-i18n="L331">洋室(1)</span><span class="d" data-i18n="L457">　入口側より</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u12_bed2.jpg" width="1800" height="1005" loading="lazy" alt="洋室(2) 約6.0帖"><figcaption><span class="t" data-i18n="L458">洋室(2) 約6.0帖</span><span class="d" data-i18n="L459">　WIC 1.2帖付き</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u13_bed3.jpg" width="1800" height="1005" loading="lazy" alt="洋室(3) 約6.0帖"><figcaption><span class="t" data-i18n="L460">洋室(3) 約6.0帖</span><span class="d" data-i18n="L461">　WIC 0.8帖付き</span></figcaption></figure>
+        <figure class="zoom"><img src="img/u14_bed_balcony.jpg" width="1800" height="1344" loading="lazy" alt="洋室からバルコニーへ"><figcaption><span class="t" data-i18n="L462">洋室からバルコニーへ</span><span class="d" data-i18n="L463">　ウッドデッキ</span></figcaption></figure>
       </div>
     </div>
   </div>
@@ -386,8 +397,8 @@ figcaption .d{display:none}
   <div class="walk-in">
     <div class="cap rv">
       <p class="no">06 — Walkthrough</p>
-      <h2>夕景の最上階を、<br>歩いて見る3415</h2>
-      <p>玄関からLDの角窓、レインボーブリッジ、<br>キッチン、洋室、浴室、<br>そしてバルコニーの夕景まで4倍速で一巡します。</p>
+      <h2 data-i18n="L464">夕景の最上階を、<br>歩いて見る3415</h2>
+      <p data-i18n="L465">玄関からLDの角窓、レインボーブリッジ、<br>キッチン、洋室、浴室、<br>そしてバルコニーの夕景まで4倍速で一巡します。</p>
     </div>
     <div class="walk-v rv">
       <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_walk.jpg" data-webm="video/walkthrough.webm" data-mp4="video/walkthrough.mp4"></video>
@@ -400,31 +411,31 @@ figcaption .d{display:none}
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_sky.jpg" data-webm="video/loop_sky.webm" data-mp4="video/loop_sky.mp4"></video>
   <div class="cap">
     <p class="no">07 — Common Space</p>
-    <h2>住まいの中の<br>サード・プレイス</h2>
-    <p>1階・2階・29階に配した8つの共用施設。</p>
+    <h2 data-i18n="L066">住まいの中の<br>サード・プレイス</h2>
+    <p data-i18n="L067">1階・2階・29階に配した8つの共用施設。</p>
   </div>
 </section>
 <section style="padding-top:56px">
   <div class="wrap">
     <ul class="floors rv">
-      <li data-f="29"><div class="f">29F</div><div class="n"><span>スカイラウンジ</span><span>ゲストルーム</span></div><div class="d">バーカウンター付きラウンジ、2タイプのゲストルーム</div></li>
-      <li data-f="2"><div class="f">2F</div><div class="n"><span>オーナーズラウンジ</span><span>ファミリールーム</span><span>フィットネスルーム</span></div><div class="d">アートに囲まれた寛ぎと、家族の時間、トレーニング</div></li>
-      <li data-f="1"><div class="f">1F</div><div class="n"><span>エントランスラウンジ</span><span>ワークラウンジ</span><span>ゴルフレンジ</span></div><div class="d">個室ブース付きワークスペース、トラックマンレンジ</div></li>
+      <li data-f="29"><div class="f">29F</div><div class="n"><span data-i18n="L068">スカイラウンジ</span><span data-i18n="L069">ゲストルーム</span></div><div class="d" data-i18n="L070">バーカウンター付きラウンジ、2タイプのゲストルーム</div></li>
+      <li data-f="2"><div class="f">2F</div><div class="n"><span data-i18n="L071">オーナーズラウンジ</span><span data-i18n="L072">ファミリールーム</span><span data-i18n="L073">フィットネスルーム</span></div><div class="d" data-i18n="L074">アートに囲まれた寛ぎと、家族の時間、トレーニング</div></li>
+      <li data-f="1"><div class="f">1F</div><div class="n"><span data-i18n="L075">エントランスラウンジ</span><span data-i18n="L076">ワークラウンジ</span><span data-i18n="L077">ゴルフレンジ</span></div><div class="d" data-i18n="L078">個室ブース付きワークスペース、トラックマンレンジ</div></li>
     </ul>
     <div class="stack">
-      <figure class="full rv zoom"><img src="img/c09_sky_lounge.jpg" width="1600" height="996" loading="lazy" alt="29階スカイラウンジ"><figcaption><span class="t">29F スカイラウンジ</span><span class="d">　レインボーブリッジ方面の眺望に向かって弧を描く家具配置</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/c09_sky_lounge.jpg" width="1600" height="996" loading="lazy" alt="29階スカイラウンジ"><figcaption><span class="t" data-i18n="L079">29F スカイラウンジ</span><span class="d" data-i18n="L080">　レインボーブリッジ方面の眺望に向かって弧を描く家具配置</span></figcaption></figure>
       <div class="grid grid-2 rv">
-        <figure class="zoom"><img src="img/c10_sky_bar.jpg" width="1574" height="982" loading="lazy" alt="スカイラウンジ バーカウンター"><figcaption><span class="t">スカイラウンジ</span><span class="d">　バーカウンター</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c11_guest1.jpg" width="1572" height="980" loading="lazy" alt="ゲストルーム1"><figcaption><span class="t">29F ゲストルーム</span><span class="d">　サウナ・肩湯バス付き</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c12_guest2.jpg" width="1600" height="900" loading="lazy" alt="ゲストルーム2"><figcaption><span class="t">29F ゲストルーム</span><span class="d">　銘木の設え</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c06_owners_lounge.jpg" width="1600" height="900" loading="lazy" alt="オーナーズラウンジ"><figcaption><span class="t">2F オーナーズラウンジ</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c10_sky_bar.jpg" width="1574" height="982" loading="lazy" alt="スカイラウンジ バーカウンター"><figcaption><span class="t" data-i18n="L068">スカイラウンジ</span><span class="d" data-i18n="L081">　バーカウンター</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c11_guest1.jpg" width="1572" height="980" loading="lazy" alt="ゲストルーム1"><figcaption><span class="t" data-i18n="L082">29F ゲストルーム</span><span class="d" data-i18n="L083">　サウナ・肩湯バス付き</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c12_guest2.jpg" width="1600" height="900" loading="lazy" alt="ゲストルーム2"><figcaption><span class="t" data-i18n="L082">29F ゲストルーム</span><span class="d" data-i18n="L084">　銘木の設え</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c06_owners_lounge.jpg" width="1600" height="900" loading="lazy" alt="オーナーズラウンジ"><figcaption><span class="t" data-i18n="L085">2F オーナーズラウンジ</span></figcaption></figure>
       </div>
-      <figure class="full rv zoom"><img src="img/c08_fitness.jpg" width="1600" height="900" loading="lazy" alt="フィットネスルーム"><figcaption><span class="t">2F フィットネスルーム</span><span class="d">　TECHNOGYM社製マシンを導入</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/c08_fitness.jpg" width="1600" height="900" loading="lazy" alt="フィットネスルーム"><figcaption><span class="t" data-i18n="L086">2F フィットネスルーム</span><span class="d" data-i18n="L087">　TECHNOGYM社製マシンを導入</span></figcaption></figure>
       <div class="grid grid-2 rv">
-        <figure class="zoom"><img src="img/c07_family.jpg" width="1600" height="900" loading="lazy" alt="ファミリールーム"><figcaption><span class="t">2F ファミリールーム</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c05_golf.jpg" width="1476" height="924" loading="lazy" alt="ゴルフレンジ"><figcaption><span class="t">1F ゴルフレンジ</span><span class="d">　トラックマンレンジ</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c04_work_lounge.jpg" width="1600" height="900" loading="lazy" alt="ワークラウンジ"><figcaption><span class="t">1F ワークラウンジ</span><span class="d">　個室ブース付き</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c03_entrance_lounge.jpg" width="1476" height="924" loading="lazy" alt="エントランスラウンジ"><figcaption><span class="t">1F エントランスラウンジ</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c07_family.jpg" width="1600" height="900" loading="lazy" alt="ファミリールーム"><figcaption><span class="t" data-i18n="L088">2F ファミリールーム</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c05_golf.jpg" width="1476" height="924" loading="lazy" alt="ゴルフレンジ"><figcaption><span class="t" data-i18n="L089">1F ゴルフレンジ</span><span class="d" data-i18n="L090">　トラックマンレンジ</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c04_work_lounge.jpg" width="1600" height="900" loading="lazy" alt="ワークラウンジ"><figcaption><span class="t" data-i18n="L091">1F ワークラウンジ</span><span class="d" data-i18n="L092">　個室ブース付き</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c03_entrance_lounge.jpg" width="1476" height="924" loading="lazy" alt="エントランスラウンジ"><figcaption><span class="t" data-i18n="L093">1F エントランスラウンジ</span></figcaption></figure>
       </div>
     </div>
   </div>
@@ -435,25 +446,25 @@ figcaption .d{display:none}
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_sunset.jpg" data-webm="video/loop_sunset.webm" data-mp4="video/loop_sunset.mp4"></video>
   <div class="cap">
     <p class="no">08 — Entrance &amp; Residence</p>
-    <h2>帆船を思わせるフォルム、<br>奥行き約50mの迎賓空間</h2>
-    <p>約12mのアプローチと高さ約8mの車寄せ。石張りの壁面に波の紋様、天井には竜骨状のオブジェ。</p>
+    <h2 data-i18n="L094">帆船を思わせるフォルム、<br>奥行き約50mの迎賓空間</h2>
+    <p data-i18n="L095">約12mのアプローチと高さ約8mの車寄せ。石張りの壁面に波の紋様、天井には竜骨状のオブジェ。</p>
   </div>
 </section>
 <section style="padding-top:56px">
   <div class="wrap">
     <div class="stack">
-      <figure class="full rv zoom"><img src="img/r05_porch.jpg" width="1600" height="615" loading="lazy" alt="車寄せ"><figcaption><span class="t">車寄せ</span><span class="d">　高さ約8mのキャノピー</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/r05_porch.jpg" width="1600" height="615" loading="lazy" alt="車寄せ"><figcaption><span class="t" data-i18n="L096">車寄せ</span><span class="d" data-i18n="L097">　高さ約8mのキャノピー</span></figcaption></figure>
       <div class="grid grid-2 rv">
-        <figure class="zoom"><img src="img/c13_ev_hall.jpg" width="1600" height="900" loading="lazy" alt="エレベーターホール"><figcaption><span class="t">エレベーターホール</span></figcaption></figure>
-        <figure class="zoom"><img src="img/c14_corridor.jpg" width="1574" height="982" loading="lazy" alt="内廊下"><figcaption><span class="t">内廊下</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c13_ev_hall.jpg" width="1600" height="900" loading="lazy" alt="エレベーターホール"><figcaption><span class="t" data-i18n="L098">エレベーターホール</span></figcaption></figure>
+        <figure class="zoom"><img src="img/c14_corridor.jpg" width="1574" height="982" loading="lazy" alt="内廊下"><figcaption><span class="t" data-i18n="L099">内廊下</span></figcaption></figure>
       </div>
-      <figure class="full rv zoom"><img src="img/r03_approach.jpg" width="1600" height="844" loading="lazy" alt="メインエントランスアプローチ"><figcaption><span class="t">メインエントランスアプローチ</span><span class="d">　シオカゼザクラをシンボルツリーに</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/r03_approach.jpg" width="1600" height="844" loading="lazy" alt="メインエントランスアプローチ"><figcaption><span class="t" data-i18n="L100">メインエントランスアプローチ</span><span class="d" data-i18n="L101">　シオカゼザクラをシンボルツリーに</span></figcaption></figure>
       <div class="grid grid-2 offset rv">
-        <figure class="zoom"><img class="ar-3-4" src="img/r01_tower.jpg" width="881" height="1479" loading="lazy" alt="外観"><figcaption><span class="t">外観</span><span class="d">　帆船を思わせるフォルム</span></figcaption></figure>
-        <figure class="zoom"><img class="ar-3-4" src="img/r06_water.jpg" width="1574" height="982" loading="lazy" alt="水盤と緑"><figcaption><span class="t">外構</span><span class="d">　水盤と緑</span></figcaption></figure>
+        <figure class="zoom"><img class="ar-3-4" src="img/r01_tower.jpg" width="881" height="1479" loading="lazy" alt="外観"><figcaption><span class="t" data-i18n="L102">外観</span><span class="d" data-i18n="L103">　帆船を思わせるフォルム</span></figcaption></figure>
+        <figure class="zoom"><img class="ar-3-4" src="img/r06_water.jpg" width="1574" height="982" loading="lazy" alt="水盤と緑"><figcaption><span class="t" data-i18n="L104">外構</span><span class="d" data-i18n="L105">　水盤と緑</span></figcaption></figure>
       </div>
-      <figure class="full rv zoom"><img src="img/r11_ext_dusk1.jpg" width="1600" height="1133" loading="lazy" alt="外観 夕景"><figcaption><span class="t">外観</span><span class="d">　地上34階建・総戸数815戸・免震構造</span></figcaption></figure>
-      <figure class="full rv zoom"><img src="img/r07_scenery.jpg" width="1600" height="843" loading="lazy" alt="運河越しの外観"><figcaption><span class="t">運河越しの外観</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/r11_ext_dusk1.jpg" width="1600" height="1133" loading="lazy" alt="外観 夕景"><figcaption><span class="t" data-i18n="L102">外観</span><span class="d" data-i18n="L106">　地上34階建・総戸数815戸・免震構造</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/r07_scenery.jpg" width="1600" height="843" loading="lazy" alt="運河越しの外観"><figcaption><span class="t" data-i18n="L107">運河越しの外観</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -463,18 +474,18 @@ figcaption .d{display:none}
   <div class="wrap">
     <div class="head rv">
       <p class="no">09 — Location</p>
-      <h2>品川駅徒歩13分、<br>水辺と緑に囲まれた港南</h2>
-      <p class="lead">運河沿いの遊歩道や公園が身近で、スーパー「マルエツプチ港南シティタワー店」は徒歩3分。品川駅港南口へはマンション専用シャトルバスが運行します。</p>
+      <h2 data-i18n="L108">品川駅徒歩13分、<br>水辺と緑に囲まれた港南</h2>
+      <p class="lead" data-i18n="L109">運河沿いの遊歩道や公園が身近で、スーパー「マルエツプチ港南シティタワー店」は徒歩3分。品川駅港南口へはマンション専用シャトルバスが運行します。</p>
     </div>
     <div class="stack">
-      <figure class="full rv zoom"><img src="img/f01_aerial_day.jpg" width="1600" height="1262" loading="lazy" alt="品川・港南の空撮"><figcaption><span class="t">港南エリア</span><span class="d">　東京湾とレインボーブリッジに近接</span></figcaption></figure>
+      <figure class="full rv zoom"><img src="img/f01_aerial_day.jpg" width="1600" height="1262" loading="lazy" alt="品川・港南の空撮"><figcaption><span class="t" data-i18n="L110">港南エリア</span><span class="d" data-i18n="L111">　東京湾とレインボーブリッジに近接</span></figcaption></figure>
       <div class="grid grid-2 grid-d3 rv">
-        <figure class="zoom"><img src="img/l01_canal.jpg" width="1500" height="1000" loading="lazy" alt="運河沿いの遊歩道"><figcaption><span class="t">運河沿いの遊歩道</span></figcaption></figure>
-        <figure class="zoom"><img src="img/l03_park.jpg" width="1500" height="880" loading="lazy" alt="港南緑水公園"><figcaption><span class="t">港南緑水公園</span></figcaption></figure>
-        <figure class="zoom"><img src="img/l05_sakura.jpg" width="1600" height="1120" loading="lazy" alt="桜並木"><figcaption><span class="t">春の桜並木</span></figcaption></figure>
-        <figure class="zoom"><img src="img/l04_maruetsu.jpg" width="1273" height="1600" loading="lazy" alt="マルエツプチ"><figcaption><span class="t">マルエツプチ</span><span class="d">　徒歩3分</span></figcaption></figure>
-        <figure class="zoom"><img src="img/l06_atre.jpg" width="1400" height="880" loading="lazy" alt="アトレ品川"><figcaption><span class="t">アトレ品川</span></figcaption></figure>
-        <figure class="zoom"><img src="img/a01_shuttle.jpg" width="1600" height="1018" loading="lazy" alt="シャトルバス"><figcaption><span class="t">専用シャトルバス</span><span class="d">　品川駅港南口まで</span></figcaption></figure>
+        <figure class="zoom"><img src="img/l01_canal.jpg" width="1500" height="1000" loading="lazy" alt="運河沿いの遊歩道"><figcaption><span class="t" data-i18n="L112">運河沿いの遊歩道</span></figcaption></figure>
+        <figure class="zoom"><img src="img/l03_park.jpg" width="1500" height="880" loading="lazy" alt="港南緑水公園"><figcaption><span class="t" data-i18n="L113">港南緑水公園</span></figcaption></figure>
+        <figure class="zoom"><img src="img/l05_sakura.jpg" width="1600" height="1120" loading="lazy" alt="桜並木"><figcaption><span class="t" data-i18n="L114">春の桜並木</span></figcaption></figure>
+        <figure class="zoom"><img src="img/l04_maruetsu.jpg" width="1273" height="1600" loading="lazy" alt="マルエツプチ"><figcaption><span class="t" data-i18n="L115">マルエツプチ</span><span class="d" data-i18n="L116">　徒歩3分</span></figcaption></figure>
+        <figure class="zoom"><img src="img/l06_atre.jpg" width="1400" height="880" loading="lazy" alt="アトレ品川"><figcaption><span class="t" data-i18n="L117">アトレ品川</span></figcaption></figure>
+        <figure class="zoom"><img src="img/a01_shuttle.jpg" width="1600" height="1018" loading="lazy" alt="シャトルバス"><figcaption><span class="t" data-i18n="L118">専用シャトルバス</span><span class="d" data-i18n="L119">　品川駅港南口まで</span></figcaption></figure>
       </div>
     </div>
   </div>
@@ -485,26 +496,26 @@ figcaption .d{display:none}
   <video class="lazy" muted loop playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5-page" preload="none" poster="img/poster_night.jpg" data-webm="video/loop_night.webm" data-mp4="video/loop_night.mp4"></video>
   <div class="cap">
     <p class="no">10 — Future of Shinagawa</p>
-    <h2>日本の玄関口が、<br>動き始める</h2>
-    <p>高輪ゲートウェイシティ、品川駅周辺の再開発、リニア中央新幹線。街の価値がこれから育っていくエリアです。</p>
+    <h2 data-i18n="L120">日本の玄関口が、<br>動き始める</h2>
+    <p data-i18n="L121">高輪ゲートウェイシティ、品川駅周辺の再開発、リニア中央新幹線。街の価値がこれから育っていくエリアです。</p>
   </div>
 </section>
 <section style="padding-top:56px">
   <div class="wrap">
     <div class="stack">
       <div class="grid grid-d2 rv">
-        <figure class="zoom"><img src="img/f02_tgw_city.jpg" width="1440" height="860" loading="lazy" alt="高輪ゲートウェイシティ"><figcaption><span class="t">高輪ゲートウェイシティ</span><span class="d">　2025年3月まちびらき</span></figcaption></figure>
-        <figure class="zoom"><img src="img/f04_redevelop_cg.jpg" width="1440" height="860" loading="lazy" alt="品川駅周辺再開発"><figcaption><span class="t">品川駅周辺の再開発</span><span class="d">　完成予想CG</span></figcaption></figure>
+        <figure class="zoom"><img src="img/f02_tgw_city.jpg" width="1440" height="860" loading="lazy" alt="高輪ゲートウェイシティ"><figcaption><span class="t" data-i18n="L122">高輪ゲートウェイシティ</span><span class="d" data-i18n="L123">　2025年3月まちびらき</span></figcaption></figure>
+        <figure class="zoom"><img src="img/f04_redevelop_cg.jpg" width="1440" height="860" loading="lazy" alt="品川駅周辺再開発"><figcaption><span class="t" data-i18n="L124">品川駅周辺の再開発</span><span class="d" data-i18n="L125">　完成予想CG</span></figcaption></figure>
       </div>
       <ul class="tl rv">
-        <li><div class="y">2025</div><div class="t">高輪ゲートウェイシティ</div><div class="d">THE LINKPILLAR 1 開業</div></li>
-        <li><div class="y">2027〜</div><div class="t">品川駅街区・西口地区</div><div class="d">駅周辺の再開発が順次進行</div></li>
-        <li><div class="y">2030年代</div><div class="t">環状4号線・品川駅北周辺</div><div class="d">道路網と駅前広場の整備</div></li>
-        <li><div class="y">計画</div><div class="t">リニア中央新幹線</div><div class="d">品川〜名古屋 約40分（JR東海公表値）</div></li>
+        <li><div class="y">2025</div><div class="t" data-i18n="L122">高輪ゲートウェイシティ</div><div class="d" data-i18n="L126">THE LINKPILLAR 1 開業</div></li>
+        <li><div class="y">2027〜</div><div class="t" data-i18n="x001">品川駅街区・西口地区</div><div class="d" data-i18n="L127">駅周辺の再開発が順次進行</div></li>
+        <li><div class="y" data-i18n="x002">2030年代</div><div class="t" data-i18n="x003">環状4号線・品川駅北周辺</div><div class="d" data-i18n="L128">道路網と駅前広場の整備</div></li>
+        <li><div class="y" data-i18n="x004">計画</div><div class="t" data-i18n="x005">リニア中央新幹線</div><div class="d" data-i18n="L129">品川〜名古屋 約40分（JR東海公表値）</div></li>
       </ul>
-      <figure class="rv fig-w"><img src="img/f05_schedule.png" width="1000" height="536" loading="lazy" alt="完成スケジュール"><figcaption><span class="t">品川エリアの完成スケジュール</span><span class="d">　出典：公式サイト</span></figcaption></figure>
+      <figure class="rv fig-w"><img src="img/f05_schedule.png" width="1000" height="536" loading="lazy" alt="完成スケジュール"><figcaption><span class="t" data-i18n="L130">品川エリアの完成スケジュール</span><span class="d" data-i18n="L131">　出典：公式サイト</span></figcaption></figure>
     </div>
-    <p class="note dk">※再開発の内容・時期は計画段階のもので、今後変更となる場合があります。</p>
+    <p class="note dk" data-i18n="L132">※再開発の内容・時期は計画段階のもので、今後変更となる場合があります。</p>
   </div>
 </section>
 
@@ -513,23 +524,23 @@ figcaption .d{display:none}
   <div class="wrap">
     <div class="head rv">
       <p class="no">11 — Access</p>
-      <h2>「品川」駅から</h2>
-      <p class="lead">東海道新幹線、山手線、京急線が集まる品川駅。都心主要駅と羽田空港へダイレクトに。</p>
+      <h2 data-i18n="L133">「品川」駅から</h2>
+      <p class="lead" data-i18n="L134">東海道新幹線、山手線、京急線が集まる品川駅。都心主要駅と羽田空港へダイレクトに。</p>
     </div>
     <ul class="times rv">
-      <li><div class="to">「東京」駅</div><div class="m">8<small>分</small></div></li>
-      <li><div class="to">「渋谷」駅</div><div class="m">12<small>分</small></div></li>
-      <li><div class="to">「新宿」駅</div><div class="m">17<small>分</small></div></li>
-      <li><div class="to">「羽田空港」</div><div class="m">20<small>分</small></div></li>
-      <li><div class="to">「有楽町」駅</div><div class="m">11<small>分</small></div></li>
-      <li><div class="to">「大手町」駅</div><div class="m">14<small>分</small></div></li>
-      <li><div class="to">「名古屋」駅 <small>新幹線</small></div><div class="m">87<small>分</small></div></li>
-      <li><div class="to">「京都」駅 <small>新幹線</small></div><div class="m">121<small>分</small></div></li>
+      <li><div class="to" data-i18n="x006">「東京」駅</div><div class="m">8<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x007">「渋谷」駅</div><div class="m">12<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x008">「新宿」駅</div><div class="m">17<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x009">「羽田空港」</div><div class="m">20<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x010">「有楽町」駅</div><div class="m">11<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x011">「大手町」駅</div><div class="m">14<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x024">「名古屋」駅 <small data-i18n="L135">新幹線</small></div><div class="m">87<small data-i18n="L013">分</small></div></li>
+      <li><div class="to" data-i18n="x025">「京都」駅 <small data-i18n="L135">新幹線</small></div><div class="m">121<small data-i18n="L013">分</small></div></li>
     </ul>
-    <p class="note dk">※所要時間は通勤時（7:00〜9:00）のもので、乗り換え・待ち時間を含みます（出典：公式サイト、2026年5月現在）。首都高「芝浦IC」まで車で約2分。</p>
+    <p class="note dk" data-i18n="L136">※所要時間は通勤時（7:00〜9:00）のもので、乗り換え・待ち時間を含みます（出典：公式サイト、2026年5月現在）。首都高「芝浦IC」まで車で約2分。</p>
     <div class="maps rv">
-      <figure><img src="img/a03_route_map.png" width="870" height="598" loading="lazy" alt="路線図"><figcaption><span class="t">路線図</span><span class="d">　品川駅から主要駅へ</span></figcaption></figure>
-      <figure><img src="img/a04_shuttle_map.png" width="841" height="750" loading="lazy" alt="シャトルバスルート"><figcaption><span class="t">専用シャトルバス</span><span class="d">　品川駅港南口まで約5分</span></figcaption></figure>
+      <figure><img src="img/a03_route_map.png" width="870" height="598" loading="lazy" alt="路線図"><figcaption><span class="t" data-i18n="L137">路線図</span><span class="d" data-i18n="L138">　品川駅から主要駅へ</span></figcaption></figure>
+      <figure><img src="img/a04_shuttle_map.png" width="841" height="750" loading="lazy" alt="シャトルバスルート"><figcaption><span class="t" data-i18n="L118">専用シャトルバス</span><span class="d" data-i18n="L139">　品川駅港南口まで約5分</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -539,19 +550,19 @@ figcaption .d{display:none}
   <div class="wrap">
     <div class="head rv">
       <p class="no">12 — Equipment</p>
-      <h2>設備・仕様</h2>
+      <h2 data-i18n="L140">設備・仕様</h2>
     </div>
     <ul class="eq rv">
-      <li><img src="img/eq/img02.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">玄関電気錠</div></li>
-      <li><img src="img/eq/img03.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">ディスポーザー</div></li>
-      <li><img src="img/eq/img09.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">食器洗い乾燥機（深型）</div></li>
-      <li><img src="img/eq/img12.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">ミストサウナ</div></li>
-      <li><img src="img/eq/img05.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">天井カセット型エアコン</div></li>
-      <li><img src="img/eq/img11.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">ガラストップコンロ</div></li>
-      <li><img src="img/eq/img21.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">浄水器一体型水栓</div></li>
-      <li><img src="img/eq/img18.jpg" width="330" height="220" loading="lazy" alt=""><div class="n">全熱交換器（ロスナイ）</div></li>
+      <li><img src="img/eq/img02.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x014">玄関電気錠</div></li>
+      <li><img src="img/eq/img03.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x015">ディスポーザー</div></li>
+      <li><img src="img/eq/img09.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x016">食器洗い乾燥機（深型）</div></li>
+      <li><img src="img/eq/img12.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x017">ミストサウナ</div></li>
+      <li><img src="img/eq/img05.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x018">天井カセット型エアコン</div></li>
+      <li><img src="img/eq/img11.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x019">ガラストップコンロ</div></li>
+      <li><img src="img/eq/img21.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x020">浄水器一体型水栓</div></li>
+      <li><img src="img/eq/img18.jpg" width="330" height="220" loading="lazy" alt=""><div class="n" data-i18n="x021">全熱交換器（ロスナイ）</div></li>
     </ul>
-    <p class="note">※設備写真は公式サイトの標準仕様イメージです。実際の仕様は現地にてご確認ください。</p>
+    <p class="note" data-i18n="L141">※設備写真は公式サイトの標準仕様イメージです。実際の仕様は現地にてご確認ください。</p>
   </div>
 </section>
 
@@ -560,36 +571,36 @@ figcaption .d{display:none}
   <div class="wrap" style="padding-top:80px">
     <div class="head rv">
       <p class="no">13 — Outline</p>
-      <h2>物件概要</h2>
+      <h2 data-i18n="L142">物件概要</h2>
     </div>
     <div class="grid grid-d2 rv" style="align-items:start">
-      <figure style="background:#fff;padding:14px;border:1px solid #e4dfd6"><img class="ar-auto" src="img/u00_plan2d.jpg" width="2300" height="1680" loading="lazy" alt="間取図"><figcaption><span class="t">間取図</span><span class="d">　3LDK＋3WIC＋SIC＋N＋TR（P-130Ane）</span></figcaption></figure>
+      <figure style="background:#fff;padding:14px;border:1px solid #e4dfd6"><img class="ar-auto" src="img/u00_plan2d.jpg" width="2300" height="1680" loading="lazy" alt="間取図"><figcaption><span class="t" data-i18n="L143">間取図</span><span class="d">　3LDK＋3WIC＋SIC＋N＋TR（P-130Ane）</span></figcaption></figure>
       <div>
         <table class="tbl">
-          <tr><th>物件名</th><td>リビオタワー品川　3415号室</td></tr>
-          <tr><th>販売価格</th><td><b>6億円</b>（税込）</td></tr>
-          <tr><th>所在地</th><td>東京都港区港南3-4-4</td></tr>
-          <tr><th>交通</th><td>JR山手線・京浜東北線・東海道本線「品川」駅 徒歩13分<br>マンション専用シャトルバス運行</td></tr>
-          <tr><th>所在階 / 向き</th><td>34階（最上階） ／ 北東角住戸（2面バルコニー）</td></tr>
-          <tr><th>間取り</th><td>3LDK＋3WIC＋SIC＋納戸＋トランクルーム（P-130Aneタイプ・プレミアム）</td></tr>
-          <tr><th>専有面積</th><td>130.24㎡（壁芯）</td></tr>
-          <tr><th>バルコニー</th><td>18.82㎡＋6.91㎡（ウッドデッキ）</td></tr>
-          <tr><th>トランクルーム</th><td>1.46㎡（同一階）</td></tr>
-          <tr><th>天井高</th><td>LD・洋室(1)(3) 約2.9m（下がり天井部を除く）</td></tr>
-          <tr><th>眺望</th><td>東京湾・レインボーブリッジ・お台場・<br>都心方向</td></tr>
-          <tr><th>駐車場</th><td>有（別途契約）</td></tr>
-          <tr><th>構造・規模</th><td>鉄骨鉄筋コンクリート造 地上34階建（免震構造）</td></tr>
-          <tr><th>総戸数</th><td>815戸</td></tr>
-          <tr><th>竣工</th><td>2026年10月新築</td></tr>
-          <tr><th>管理費</th><td>61,860円／月（委託・常駐）</td></tr>
-          <tr><th>修繕積立金</th><td>24,740円／月</td></tr>
-          <tr><th>その他費用</th><td>インターネット利用料 2,288円／月、シャトルバス積立金 2,322円／月、トランクルーム使用料 5,840円／月</td></tr>
-          <tr><th>敷地の権利</th><td>所有権</td></tr>
-          <tr><th>用途地域</th><td>準工業地域</td></tr>
-          <tr><th>管理</th><td>コンシェルジュサービス、24時間有人管理、各階ゴミステーション、宅配ボックス</td></tr>
+          <tr><th data-i18n="L145">物件名</th><td data-i18n="L466">リビオタワー品川　3415号室</td></tr>
+          <tr><th data-i18n="L147">販売価格</th><td data-i18n="L467"><b data-i18n="L404">6億円</b>（税込）</td></tr>
+          <tr><th data-i18n="L149">所在地</th><td data-i18n="L150">東京都港区港南3-4-4</td></tr>
+          <tr><th data-i18n="L151">交通</th><td data-i18n="L152">JR山手線・京浜東北線・東海道本線「品川」駅 徒歩13分<br>マンション専用シャトルバス運行</td></tr>
+          <tr><th data-i18n="L153">所在階 / 向き</th><td data-i18n="L468">34階（最上階） ／ 北東角住戸（2面バルコニー）</td></tr>
+          <tr><th data-i18n="L155">間取り</th><td data-i18n="L469">3LDK＋3WIC＋SIC＋納戸＋トランクルーム（P-130Aneタイプ・プレミアム）</td></tr>
+          <tr><th data-i18n="L157">専有面積</th><td data-i18n="L470">130.24㎡（壁芯）</td></tr>
+          <tr><th data-i18n="L159">バルコニー</th><td data-i18n="L471">18.82㎡＋6.91㎡（ウッドデッキ）</td></tr>
+          <tr><th data-i18n="L472">トランクルーム</th><td data-i18n="L473">1.46㎡（同一階）</td></tr>
+          <tr><th data-i18n="L474">天井高</th><td data-i18n="L475">LD・洋室(1)(3) 約2.9m（下がり天井部を除く）</td></tr>
+          <tr><th data-i18n="L265">眺望</th><td data-i18n="L476">東京湾・レインボーブリッジ・お台場・<br>都心方向</td></tr>
+          <tr><th data-i18n="L259">駐車場</th><td data-i18n="L477">有（別途契約）</td></tr>
+          <tr><th data-i18n="L163">構造・規模</th><td data-i18n="L164">鉄骨鉄筋コンクリート造 地上34階建（免震構造）</td></tr>
+          <tr><th data-i18n="L165">総戸数</th><td data-i18n="L166">815戸</td></tr>
+          <tr><th data-i18n="L167">竣工</th><td data-i18n="L006">2026年10月新築</td></tr>
+          <tr><th data-i18n="L168">管理費</th><td data-i18n="L478">61,860円／月（委託・常駐）</td></tr>
+          <tr><th data-i18n="L170">修繕積立金</th><td data-i18n="L479">24,740円／月</td></tr>
+          <tr><th data-i18n="L172">その他費用</th><td data-i18n="L480">インターネット利用料 2,288円／月、シャトルバス積立金 2,322円／月、トランクルーム使用料 5,840円／月</td></tr>
+          <tr><th data-i18n="L174">敷地の権利</th><td data-i18n="L175">所有権</td></tr>
+          <tr><th data-i18n="L176">用途地域</th><td data-i18n="L177">準工業地域</td></tr>
+          <tr><th data-i18n="L178">管理</th><td data-i18n="L179">コンシェルジュサービス、24時間有人管理、各階ゴミステーション、宅配ボックス</td></tr>
         </table>
-        <p class="note">※管理費・修繕積立金・その他費用は管理規約別表に基づく2026年10月時点の月額です。正確な金額は重要事項説明書にてご確認ください。</p>
-        <p class="note">※専有部の写真は2026年6月・10月に撮影したものです。一部の写真は空の色を画像処理で調整しています。</p>
+        <p class="note" data-i18n="L481">※管理費・修繕積立金・その他費用は管理規約別表に基づく2026年10月時点の月額です。正確な金額は重要事項説明書にてご確認ください。</p>
+        <p class="note" data-i18n="L482">※専有部の写真は2026年6月・10月に撮影したものです。一部の写真は空の色を画像処理で調整しています。</p>
       </div>
     </div>
   </div>
@@ -600,18 +611,24 @@ figcaption .d{display:none}
   <img src="img/r12_ext_dusk2.jpg" width="1600" height="1067" loading="lazy" alt="">
   <div class="in">
     <p class="en rv">Livio Tower Shinagawa — 3415 Penthouse</p>
-    <h2 class="rv">最上階の角部屋から、<br>東京湾を暮らす。</h2>
-    <p class="p rv">販売価格<b>6億円</b></p>
+    <h2 class="rv" data-i18n="L483">最上階の角部屋から、<br>東京湾を暮らす。</h2>
+    <p class="p rv" data-i18n="L484">販売価格<b data-i18n="L404">6億円</b></p>
     <ul class="rv">
-      <li>34階・最上階</li><li>北東角</li><li>3LDK＋3WIC</li><li>130.24㎡</li><li>天井高 約2.9m</li><li>2026年10月新築</li>
+      <li data-i18n="L485">34階・最上階</li><li data-i18n="L275">北東角</li><li>3LDK＋3WIC</li><li>130.24㎡</li><li data-i18n="L408">天井高 約2.9m</li><li data-i18n="L006">2026年10月新築</li>
     </ul>
+    <div class="pdfs rv" id="pdfs">
+      <p class="pdfs-t" data-i18n="P001">販売資料（PDF）を見る</p>
+      <a href="pdf/3415_ja.pdf" data-pdf="ja" target="_blank" rel="noopener">日本語 PDF</a>
+      <a href="pdf/3415_en.pdf" data-pdf="en" target="_blank" rel="noopener">English PDF</a>
+      <a href="pdf/3415_zh.pdf" data-pdf="zh" target="_blank" rel="noopener">中文 PDF</a>
+    </div>
   </div>
 </section>
 
 <footer>
-  <p>※専有部の写真は2026年6月・10月撮影（一部は空の色を画像処理で調整）、室内動画は2026年10月撮影（4倍速）。共用部・外観・周辺の写真および動画は竣工後に撮影されたもので、一部CG・完成予想図を含みます。</p>
-  <p>※掲載内容は2026年10月現在のものです。共用施設・サービスの内容は管理規約に従い、変更となる場合があります。</p>
-  <p>※家具・調度品は販売価格に含まれません。</p>
+  <p data-i18n="L486">※専有部の写真は2026年6月・10月撮影（一部は空の色を画像処理で調整）、室内動画は2026年10月撮影（4倍速）。共用部・外観・周辺の写真および動画は竣工後に撮影されたもので、一部CG・完成予想図を含みます。</p>
+  <p data-i18n="L186">※掲載内容は2026年10月現在のものです。共用施設・サービスの内容は管理規約に従い、変更となる場合があります。</p>
+  <p data-i18n="L187">※家具・調度品は販売価格に含まれません。</p>
   </footer>
 
 <script>
@@ -650,6 +667,30 @@ figcaption .d{display:none}
   var kt=0; ['touchstart','touchend','click','scroll'].forEach(function(t){window.addEventListener(t,function(){var now=Date.now(); if(now-kt>800){kt=now;kick();}},{passive:true});});
   function onScroll(){bar.classList.toggle('solid',window.scrollY>window.innerHeight*0.7)}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+</script>
+
+<script>
+var I18N={"en": {"x001": "Shinagawa Sta. block & West Exit district", "x002": "2030s", "x003": "Loop Road 4 & north of Shinagawa Sta.", "x004": "Planned", "x005": "Linear Chuo Shinkansen", "x006": "Tokyo Sta.", "x007": "Shibuya Sta.", "x008": "Shinjuku Sta.", "x009": "Haneda Airport", "x010": "Yurakucho Sta.", "x011": "Otemachi Sta.", "x012": "Nagoya Sta.", "x013": "Kyoto Sta.", "x014": "Electric front-door lock", "x015": "Disposer", "x016": "Dishwasher-dryer (deep)", "x017": "Mist sauna", "x018": "Ceiling-cassette air conditioning", "x019": "Glass-top stove", "x020": "Water-purifier faucet", "x021": "Heat-recovery ventilation (Lossnay)", "x022": "Rent", "x023": "/ month", "x024": "Nagoya Sta. <small>Shinkansen</small>", "x025": "Kyoto Sta. <small>Shinkansen</small>", "x026": "Rent <b>¥880,000</b> / month", "L412": "A 34th-floor penthouse with corner windows on two sides wrapping a living-dining room of about 25.5 tatami. The LD and two bedrooms have ceilings of about 2.9 m. A walk-in closet in each of three bedrooms, a 1822 bath, and two wood-deck balconies.", "L437": "In the living-dining room with a ceiling of about 2.9 m, the stars are two fixed windows meeting at the corner. Large stone-look tiles and the coved ceiling's indirect lighting quietly frame the view.", "L454": "Bedroom (1) is a master of about 10.0 tatami with a ceiling of about 2.9 m. All three rooms face the wood-deck balcony, with walnut floors throughout. 1822 bath.", "L486": "* Interior photos taken June and October 2026 (some with sky color adjusted); interior video taken October 2026 (4x speed). Photos and video of shared areas, exterior and surroundings were taken after completion and include some CG and renderings.", "L423": "A panorama of Rainbow Bridge, Odaiba and Tokyo Bay. Beyond the canal, the central Tokyo skyline. Unobstructed top-floor views spread out before you.", "L136": "* Times are commuting-hour (7:00–9:00) and include transfers and waiting (source: official website, as of May 2026). About 2 min by car to the Shibaura IC on the Metropolitan Expressway.", "L109": "Canal-side promenades and parks are close at hand, and the Maruetsu Petit supermarket is a 3-minute walk. A residents' shuttle bus runs to the Konan exit of Shinagawa Station.", "L481": "* Management fees, repair reserves and other costs are monthly amounts as of October 2026 under the management rules schedule. Please confirm exact amounts in the Explanation of Important Matters.", "L465": "From the entrance to the LD's corner windows, Rainbow Bridge, kitchen, bedrooms, bath, and the balcony at dusk — a tour at 4x speed.", "L480": "Internet ¥2,288 / month, shuttle bus fund ¥2,322 / month, trunk room ¥5,840 / month", "L186": "* Information is current as of October 2026. Shared facilities and services are subject to the management rules and may change.", "L482": "* Interior photos were taken in June and October 2026. Some photos have had the sky color adjusted.", "L121": "Takanawa Gateway City, redevelopment around Shinagawa Station, and the Linear Chuo Shinkansen. An area whose value is still growing.", "L032": "From the entrance hall to the 29th-floor Sky Lounge. A 34-story, 815-residence seismic-isolated tower.", "L152": "13 min walk from Shinagawa Sta. (JR Yamanote, Keihin-Tohoku, Tokaido lines)<br>Residents' shuttle bus", "L409": "<span>Price</span><b>¥600,000,000</b><small>(tax incl.)</small>", "L095": "An approach of about 12 m and a porte-cochère about 8 m high. Stone walls with a wave pattern, and a keel-like sculpture overhead.", "L469": "3LDK + 3WIC + SIC + storage + trunk room (type P-130Ane, Premium)", "L141": "* Equipment photos are standard-specification images from the official website. Please confirm actual specifications on site.", "L134": "Shinagawa Station brings together the Tokaido Shinkansen, Yamanote Line and Keikyu Line — direct to major central stations and Haneda Airport.", "L179": "Concierge service, 24-hour staffed management, trash station on every floor, delivery lockers", "L132": "* Redevelopment content and timing are at the planning stage and subject to change.", "L094": "A form evoking a sailing ship,<br>a reception space about 50 m deep", "L475": "LD, Bedrooms (1)(3) approx. 2.9 m (excluding dropped ceilings)", "L080": "Furniture arranged in an arc toward the Rainbow Bridge view", "L411": "130.24<small>㎡ (wall-center)</small>", "L453": "Three bedrooms,<br>and three walk-in closets", "L476": "Tokyo Bay, Rainbow Bridge, Odaiba,<br>central Tokyo", "L070": "Lounge with bar counter, two types of guest rooms", "L468": "34F (top floor) / Northeast corner (two balconies)", "L031": "Shinagawa's new landmark,<br>and its shared spaces", "L074": "Relaxation among art, family time, and training", "L078": "Workspace with private booths, TrackMan range", "L108": "13 min walk to Shinagawa Sta.,<br>Konan, surrounded by water and green", "L164": "Steel-reinforced concrete, 34 stories (seismic isolation)", "L410": "The top floor,<br>a premium floor of just 15 homes", "L483": "From the top-floor corner,<br>living Tokyo Bay.", "L438": "Rainbow Bridge through the corner window", "L444": "Rainbow Bridge and the balcony door", "L464": "The top floor at dusk,<br>a walk through 3415", "L067": "Eight shared facilities on the 1st, 2nd and 29th floors.", "L436": "An LD of about 25.5 tatami,<br>with corner windows on two sides", "L129": "Shinagawa–Nagoya approx. 40 min (JR Central)", "L471": "18.82㎡ + 6.91㎡ (wood deck)", "L187": "* Furniture and furnishings are not included in the price.", "L010": "815<small>units</small>", "L425": "View from the 34th floor (photographed June 2026)", "L106": "34 stories, 815 residences, seismic isolation", "L126": "THE LINKPILLAR 1 opens", "L198": "NE<small>corner</small>", "L012": "13<small>min</small>", "L066": "A third place,<br>within your home", "L427": "Rainbow Bridge and bayside towers", "L435": "Wood-deck finish, approx. 18.82㎡", "L087": "Technogym machines", "L120": "Japan's gateway<br>is on the move", "L417": "WIC 2.3 / 0.8 / 1.2 tatami", "L101": "Shiokaze cherry as the symbol tree", "L111": "Close to Tokyo Bay and Rainbow Bridge", "L478": "¥61,860 / month (outsourced, on-site)", "L420": "Two balconies (wood deck)", "L466": "Livio Tower Shinagawa, Unit 3415", "L442": "Open kitchen and the view toward central Tokyo", "L100": "Main entrance approach", "L130": "Shinagawa area completion schedule", "L467": "<b>¥600,000,000</b> (tax incl.)", "L484": "Price <b>¥600,000,000</b>", "L403": "Livio Tower Shinagawa 3415", "L421": "Trunk room 1.46㎡", "L424": "Rainbow Bridge and Odaiba", "L431": "Konan to Shibaura skyline", "L093": "1F Entrance Lounge", "L433": "Tokyo Bay beyond the wood deck", "L443": "Tokyo Bay beyond the white countertop", "L455": "Bedroom (1) approx. 10.0 tatami", "L085": "2F Owners' Lounge", "L086": "2F Fitness Room", "L123": "Opened March 2025", "L127": "Station-area redevelopment in phases", "L150": "3-4-4 Konan, Minato-ku, Tokyo", "L406": "NE corner, two balconies", "L415": "Bedroom (1) 10.0 tatami", "L447": "Miele dishwasher", "L450": "Dark-brown mirror-finish doors", "L458": "Bedroom (2) approx. 6.0 tatami", "L460": "Bedroom (3) approx. 6.0 tatami", "L079": "29F Sky Lounge", "L088": "2F Family Room", "L097": "Canopy about 8 m high", "L103": "A form evoking a sailing ship", "L122": "Takanawa Gateway City", "L128": "Roads and station plaza upgraded", "L139": "About 5 min to Shinagawa Sta. Konan exit", "L470": "130.24㎡ (wall-center)", "L407": "Area 130.24㎡", "L006": "Newly built Oct. 2026", "L206": "Bedroom (2) 6.0 tatami", "L416": "Bedroom (3) 6.0 tatami", "L422": "34th floor, top-floor views", "L430": "Toward central Tokyo and Tokyo Tower", "L440": "About 25.5 tatami of space", "L459": "With WIC 1.2 tatami", "L461": "With WIC 0.8 tatami", "L462": "From the bedroom to the balcony", "L075": "Entrance Lounge", "L082": "29F Guest Room", "L083": "With sauna and shoulder-shower bath", "L091": "1F Work Lounge", "L473": "1.46㎡ (same floor)", "L405": "Top-floor penthouse", "L408": "Ceiling approx. 2.9 m", "L016": "Furniture is for illustration only", "L414": "Kitchen 4.7 tatami", "L429": "Shinagawa Wharf and Takahama Canal", "L223": "Living-dining", "L029": "Island kitchen", "L005": "Corner window", "L445": "Glass-top stove", "L449": "Kitchen counter", "L452": "Stainless steel hood", "L071": "Owners' Lounge", "L073": "Fitness Room", "L089": "1F Golf Range", "L090": "TrackMan range", "L098": "Elevator hall", "L124": "Redevelopment around Shinagawa Sta.", "L138": "From Shinagawa Sta. to major stations", "L479": "¥24,740 / month", "L002": "Livio Tower Shinagawa", "L413": "LD 25.5 tatami", "L418": "SIC 2.0 tatami", "L446": "Stone-look counter", "L072": "Family Room", "L112": "Canal-side promenade", "L118": "Residents' shuttle bus", "L119": "To Shinagawa Sta. Konan exit", "L131": "Source: official website", "L153": "Floor / Facing", "L419": "Bath 1822", "L428": "Toward the canal and central Tokyo", "L432": "From the balcony", "L439": "From the kitchen side", "L068": "Sky Lounge", "L076": "Work Lounge", "L081": "Bar counter", "L092": "With private booths", "L107": "Exterior across the canal", "L133": "From Shinagawa Station", "L472": "Trunk room", "L477": "Available (separate contract)", "L485": "34F, top floor", "L014": "Walk to Shinagawa Sta.", "L434": "Balcony 1", "L451": "Range hood", "L456": "Balcony side", "L463": "Wood deck", "L069": "Guest rooms", "L077": "Golf Range", "L113": "Konan Ryokusui Park", "L115": "Maruetsu Petit", "L125": "Completion CG", "L015": "3D Floor Plan", "L019": "㎡ (wall-center)", "L426": "Toward Tokyo Bay", "L448": "Built-in", "L331": "Bedroom (1)", "L457": "From the doorway", "L084": "Finished in fine timber", "L110": "Konan area", "L114": "Cherry blossoms in spring", "L117": "atré Shinagawa", "L140": "Equipment & Specifications", "L159": "Balcony", "L163": "Structure / Scale", "L170": "Repair reserve", "L172": "Other costs", "L174": "Land rights", "L177": "Quasi-industrial", "L008": "(tax incl.)", "L441": "From the window side", "L105": "Water basin and greenery", "L116": "3 min walk", "L142": "Property Outline", "L147": "Price", "L157": "Floor area", "L166": "815", "L176": "Zoning", "L404": "¥600,000,000", "L096": "Porte-cochère", "L099": "Interior corridor", "L135": "Shinkansen", "L137": "Route map", "L143": "Floor plan", "L145": "Property", "L149": "Location", "L155": "Layout", "L474": "Ceiling height", "L259": "Parking", "L165": "Total units", "L168": "Management fee", "L175": "Freehold", "L275": "NE corner", "L102": "Exterior", "L104": "Landscape", "L151": "Access", "L265": "View", "L167": "Completion", "L178": "Management", "L199": "corner", "L011": "units", "L013": "min", "P001": "View the brochure (PDF)"}, "zh": {"x001": "品川站街区・西口地区", "x002": "2030年代", "x003": "环状4号线・品川站北周边", "x004": "规划中", "x005": "磁悬浮中央新干线", "x006": "「东京」站", "x007": "「涩谷」站", "x008": "「新宿」站", "x009": "「羽田机场」", "x010": "「有乐町」站", "x011": "「大手町」站", "x012": "「名古屋」站", "x013": "「京都」站", "x014": "玄关电子锁", "x015": "垃圾处理器", "x016": "洗碗烘干机（深型）", "x017": "雾化桑拿", "x018": "嵌入式空调", "x019": "玻璃面灶台", "x020": "净水器一体式龙头", "x021": "全热交换器（Lossnay）", "x022": "月租", "x023": "／月", "x024": "「名古屋」站 <small>新干线</small>", "x025": "「京都」站 <small>新干线</small>", "x026": "月租 <b>约3.73万元</b>／月", "L412": "约25.5帖客餐厅，两面转角窗环绕，34层顶层尊邸。客餐厅与两间卧室天花高约2.9m。三间卧室各配步入式衣帽间，1822尺寸浴室，双面木平台阳台。", "L437": "天花高约2.9m的客餐厅，主角是在转角交汇的两面定景窗。大规格石纹瓷砖与跌级天花的间接照明，静静衬托着窗外风景。", "L454": "卧室(1)约10.0帖，天花高约2.9m的主卧。三间卧室皆面向木平台阳台，胡桃木地板一脉相承。浴室1822尺寸。", "L486": "※专有部照片摄于2026年6月・10月（部分天空色彩经过处理），室内视频摄于2026年10月（4倍速）。公共区域・外观・周边的照片与视频摄于竣工后，部分含CG与效果图。", "L423": "彩虹大桥、台场与东京湾的全景，运河彼端是都心天际线。顶层视野，一望无际。", "L136": "※所需时间为通勤时段（7:00〜9:00），含换乘与等候（来源：官方网站，2026年5月）。驾车约2分钟可达首都高「芝浦IC」。", "L109": "运河步道与公园近在咫尺，超市「Maruetsu Petit 港南City Tower店」步行3分钟。另有住户专用接驳巴士往返品川站港南口。", "L481": "※管理费・修缮准备金・其他费用为依据管理规约附表的2026年10月月额，人民币为参考换算值。准确金额请以重要事项说明书为准。", "L465": "从玄关到客餐厅的转角窗、彩虹大桥、厨房、卧室、浴室，直至阳台暮色，4倍速一览。", "L480": "网络使用费 约97元／月（2,288日元），接驳巴士公积金 约99元／月（2,322日元），储物间使用费 约248元／月（5,840日元）", "L186": "※刊载内容为2026年10月时点信息。公共设施与服务依管理规约可能变更。", "L482": "※专有部照片摄于2026年6月・10月。部分照片的天空色彩经过图像处理。", "L121": "高轮Gateway City、品川站周边再开发、磁悬浮中央新干线。这片土地的价值，正在生长。", "L032": "从入口大堂到29层空中大堂。地上34层、共815户的隔震塔楼。", "L152": "JR山手线・京滨东北线・东海道本线「品川」站 步行13分钟<br>住户专用接驳巴士", "L409": "<span>售价</span><b>人民币 2,550万元</b><small>（约6亿日元・含税）</small>", "L095": "约12m的迎宾通道与高约8m的车寄。石材墙面刻有波纹，天花悬挂龙骨状艺术装置。", "L469": "3LDK＋3WIC＋SIC＋储藏室＋储物间（P-130Ane户型・尊享）", "L141": "※设备照片为官方网站的标准规格示意，实际规格请以现场为准。", "L134": "东海道新干线、山手线、京急线汇聚的品川站，直达都心主要车站与羽田机场。", "L179": "礼宾服务、24小时有人管理、各层垃圾站、快递柜", "L132": "※再开发内容与时间为规划阶段信息，今后可能变更。", "L094": "宛如扬帆之舟，<br>纵深约50m的迎宾空间", "L475": "客餐厅・卧室(1)(3) 约2.9m（下垂天花部分除外）", "L080": "家具沿弧线排布，正对彩虹大桥方向", "L411": "130.24<small>㎡（壁芯）</small>", "L453": "三间卧室，<br>三间步入式衣帽间", "L476": "东京湾・彩虹大桥・台场・<br>都心方向", "L070": "设吧台的大堂，两种类型的客房", "L468": "34层（顶层） ／ 东北角户（双阳台）", "L031": "品川新地标，<br>步入其公共空间", "L074": "艺术环绕的闲适、家人的时光、健身", "L078": "带独立隔间的办公空间、TrackMan练习场", "L108": "步行13分钟至品川站，<br>水岸与绿意环抱的港南", "L164": "钢骨钢筋混凝土造 地上34层（隔震结构）", "L410": "顶层之上，<br>仅15户的尊享楼层", "L483": "自顶层转角，<br>与东京湾共栖。", "L438": "转角窗外的彩虹大桥", "L444": "彩虹大桥与阳台出入口", "L464": "暮色中的顶层，<br>漫步3415", "L067": "1层・2层・29层，共8处公共设施。", "L436": "约25.5帖客餐厅，<br>两面转角窗", "L129": "品川〜名古屋 约40分钟（JR东海公布）", "L471": "18.82㎡＋6.91㎡（木平台）", "L187": "※家具・陈设不含于售价中。", "L010": "815<small>户</small>", "L425": "34层实景（2026年6月拍摄）", "L106": "地上34层・共815户・隔震结构", "L126": "THE LINKPILLAR 1 开业", "L198": "东北<small>角</small>", "L012": "13<small>分钟</small>", "L066": "家中的<br>第三空间", "L427": "彩虹大桥与湾岸塔楼群", "L435": "木平台饰面，约18.82㎡", "L087": "引进TECHNOGYM器械", "L120": "日本的门户，<br>正在启程", "L417": "WIC 2.3・0.8・1.2帖", "L101": "以潮风樱为象征树", "L111": "邻近东京湾与彩虹大桥", "L478": "约2,625元／月（61,860日元・委托・常驻）", "L420": "双阳台（木平台）", "L466": "Livio Tower 品川　3415室", "L442": "开放式厨房与都心方向景观", "L100": "主入口通道", "L130": "品川地区竣工时间表", "L467": "<b>人民币 2,550万元</b>（约6亿日元・含税）<br><small>※100日元≈4.2439人民币（2026年10月18日 中国银行折算价）</small>", "L484": "售价<b>人民币 2,550万元</b>", "L403": "Livio Tower 品川　3415", "L421": "储物间 1.46㎡", "L424": "彩虹大桥与台场", "L431": "港南至芝浦的天际线", "L093": "1F 入口大堂", "L433": "木平台外的东京湾", "L443": "白色台面彼端的东京湾", "L455": "卧室(1) 约10.0帖", "L085": "2F 业主大堂", "L086": "2F 健身房", "L123": "2025年3月开街", "L127": "站区再开发依次推进", "L150": "东京都港区港南3-4-4", "L406": "东北角・双阳台", "L415": "卧室(1) 10.0帖", "L447": "Miele 洗碗机", "L450": "深棕色镜面柜门", "L458": "卧室(2) 约6.0帖", "L460": "卧室(3) 约6.0帖", "L079": "29F 空中大堂", "L088": "2F 家庭室", "L097": "高约8m的雨篷", "L103": "宛如扬帆之舟", "L122": "高轮Gateway City", "L128": "道路网与站前广场整备", "L139": "约5分钟至品川站港南口", "L470": "130.24㎡（壁芯）", "L407": "面积 130.24㎡", "L006": "2026年10月 全新落成", "L206": "卧室(2) 6.0帖", "L416": "卧室(3) 6.0帖", "L422": "34层，顶层的景观", "L430": "都心・东京塔方向", "L440": "约25.5帖的开阔", "L459": "配WIC 1.2帖", "L461": "配WIC 0.8帖", "L462": "自卧室通往阳台", "L075": "入口大堂", "L082": "29F 客房", "L083": "配桑拿・肩部淋浴浴缸", "L091": "1F 办公休息室", "L473": "1.46㎡（同层）", "L405": "顶层尊邸", "L408": "天花高 约2.9m", "L016": "家具仅为示意", "L414": "厨房 4.7帖", "L429": "品川码头与高滨运河", "L223": "客餐厅", "L029": "中岛厨房", "L005": "转角落地窗", "L445": "玻璃面灶台", "L449": "厨房台面", "L452": "不锈钢烟罩", "L071": "业主大堂", "L073": "健身房", "L089": "1F 高尔夫练习场", "L090": "TrackMan练习场", "L098": "电梯厅", "L124": "品川站周边再开发", "L138": "自品川站至主要车站", "L479": "约1,050元／月（24,740日元）", "L002": "Livio Tower 品川", "L413": "客餐厅 25.5帖", "L418": "SIC 2.0帖", "L446": "石纹台面", "L072": "家庭室", "L112": "运河步道", "L118": "住户专用接驳巴士", "L119": "往返品川站港南口", "L131": "来源：官方网站", "L153": "所在楼层 / 朝向", "L419": "浴室 1822", "L428": "运河・都心方向", "L432": "自阳台", "L439": "自厨房一侧", "L068": "空中大堂", "L076": "办公休息室", "L081": "吧台", "L092": "带独立隔间", "L107": "隔运河眺望外观", "L133": "自「品川」站出发", "L472": "储物间", "L477": "有（另行签约）", "L485": "34层・顶层", "L014": "步行至品川站", "L434": "阳台1", "L451": "抽油烟机", "L456": "阳台侧", "L463": "木平台", "L069": "客房", "L077": "高尔夫练习场", "L113": "港南绿水公园", "L115": "Maruetsu Petit", "L125": "竣工效果图", "L015": "3D户型图", "L019": "㎡（壁芯）", "L426": "东京湾方向", "L448": "嵌入式", "L331": "卧室(1)", "L457": "自入口一侧", "L084": "名贵木材装饰", "L110": "港南地区", "L114": "春日樱花大道", "L117": "atré 品川", "L140": "设备・规格", "L159": "阳台", "L163": "结构・规模", "L170": "修缮准备金", "L172": "其他费用", "L174": "土地权利", "L177": "准工业地域", "L008": "（含税）", "L441": "自窗侧", "L105": "水景与绿意", "L116": "步行3分钟", "L142": "物业概要", "L147": "售价", "L157": "专有面积", "L166": "815户", "L176": "用途地域", "L404": "人民币 2,550万元", "L096": "车寄", "L099": "内走廊", "L135": "新干线", "L137": "线路图", "L143": "户型图", "L145": "物业名称", "L149": "所在地", "L155": "户型", "L474": "天花高度", "L259": "停车场", "L165": "总户数", "L168": "管理费", "L175": "所有权", "L275": "东北角", "L102": "外观", "L104": "外部景观", "L151": "交通", "L265": "景观", "L167": "竣工", "L178": "管理", "L199": "角", "L011": "户", "L013": "分钟", "P001": "查看销售资料（PDF）"}};
+var I18N_META={"title": ["Livio Tower Shinagawa 3415 | 34F, 13 min walk to Shinagawa", "Livio Tower 品川 3415｜34层・步行13分钟至品川站"], "description": ["Livio Tower Shinagawa, Unit 3415. A 34-story seismic-isolated tower near Shinagawa Station, shown with 3D floor plans, views, shared spaces and video.", "Livio Tower 品川 3415室。品川站旁地上34层隔震塔楼，以3D户型图、景观、公共空间的图片与视频呈现。"]};
+(function(){
+  var els=null;
+  function setLang(l){
+    if(l!=='en'&&l!=='zh')l='ja';
+    if(!els){els=Array.prototype.slice.call(document.querySelectorAll('[data-i18n]'));els.forEach(function(e){e.setAttribute('data-ja',e.innerHTML);});}
+    els.forEach(function(e){var id=e.getAttribute('data-i18n');var t=(l==='ja')?e.getAttribute('data-ja'):(I18N[l][id]||e.getAttribute('data-ja'));if(e.innerHTML!==t)e.innerHTML=t;});
+    document.documentElement.lang=l;
+    var ti=document.querySelector('title'),md=document.querySelector('meta[name="description"]');
+    if(!ti.getAttribute('data-ja')){ti.setAttribute('data-ja',ti.textContent);md.setAttribute('data-ja',md.getAttribute('content'));}
+    ti.textContent=(l==='ja')?ti.getAttribute('data-ja'):I18N_META.title[l==='en'?0:1];
+    md.setAttribute('content',(l==='ja')?md.getAttribute('data-ja'):I18N_META.description[l==='en'?0:1]);
+    document.querySelectorAll('#lang a').forEach(function(a){a.classList.toggle('on',a.getAttribute('data-lang')===l);});
+    try{localStorage.setItem('lang',l);}catch(e){}
+    var box=document.getElementById('pdfs');if(box){var a=box.querySelector('a[data-pdf="'+l+'"]');if(a){box.querySelectorAll('a').forEach(function(x){x.classList.remove('on');});a.classList.add('on');box.insertBefore(a,box.querySelector('a'));}}
+  }
+  document.querySelectorAll('#lang a').forEach(function(a){a.addEventListener('click',function(){setLang(a.getAttribute('data-lang'));});});
+  var q=(location.search.match(/[?&]lang=(ja|en|zh)/)||[])[1],st=null;try{st=localStorage.getItem('lang');}catch(e){}
+  setLang(q||st||'ja');
 })();
 </script>
 </body>
